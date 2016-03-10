@@ -1895,6 +1895,11 @@ OMX_ERRORTYPE  omx_video::get_parameter(OMX_IN OMX_HANDLETYPE     hComp,
                 batch->nPortIndex = PORT_INDEX_IN;
                 break;
             }
+        case OMX_IndexParamConsumerUsageBits:
+            {
+                 eRet = OMX_ErrorNotImplemented;
+                 break;
+            }
         case OMX_IndexParamVideoSliceFMO:
         default:
             {
